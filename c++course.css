@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+.wrapper{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    
+}
+/* body {
+    animation-name: backgroundColorPalette;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+    @keyframes backgroundColorPalette {
+        12.5% {
+          background-color: #d76b6b;
+        }
+        25% {
+          background-color: #FFA500;
+        }
+        37.5% {
+          background-color: #dbd45d;
+        }
+        50% {
+          background-color: #7FFF00;
+        }
+        62.5% {
+          background-color: #00FFFF;
+        }
+        75% {
+          background-color: #353589;
+        }
+        87.5% {
+          background-color: #9932CC;
+        }
+        100% {
+          background-color: #FF1493;
+        }
+      }*/
+  
+.box-container{
+    /* color: white; */
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box{
+    filter: grayscale(100);
+    width: 85%;
+    height: 100%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 1rem 1.5rem rgba(0,0,0,0.5);
+}
+.box:hover{
+    filter: grayscale(0);
+    transition-delay:10ms;
+    /* transition-delay: 10ms; */
+    transform: scale(1.03);
+    box-shadow: 0px 1rem 1.5rem rgba(0,0,0,1);
+}.box:hover{
+    filter: grayscale(0);
+    transition-delay:10ms;
+    /* transition-delay: 10ms; */
+    transform: scale(1.03);
+    box-shadow: 0px 1rem 1.5rem rgba(0,0,0,1);
+}
+.box .vid iframe{
+    height: 300px;
+    width:400px;  
+    padding: 10px;
+    /* background: url("knowitalllogo2.png"); */
+}
+.box .box-container .context{
+    background: white;
+}
+.playlist{
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom:50px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.playlist a
+{
+    text-decoration: none;
+    color: black;   
+}
+.about{
+    margin-top: 100px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    width: 100%;
+    /* background: black; */
+    --tw-bg-opacity: 1;
+    background-color: rgb(102 116 204/var(--tw-bg-opacity));
+    color: white;
+}
+.about-sec{
+    max-width: 1080px;
+    display:grid;
+    margin: 0 auto;
+    justify-content: space-between;
+    grid-template-rows: repeat(1);
+    grid-template-columns: repeat(6,15%);
+    font-weight: bolder;
+
+}
+.sec a p{
+    color:white
+}
+.sec h3{
+    margin-bottom: 15px;
+}
+.sec a{
+    text-decoration: none;
+    color: black;
+}
+.text {
+    padding-top: 12px;
+}
+.sec .text:hover{
+    text-decoration: underline;
+    color: black;
+}
+#sec-1{
+    height: 200px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-right: 150px;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    margin-left: -100px;
+}
+#sec-1 .cont{
+    padding-left: 70px;
+    font-size: 20px;
+}
+#sec-1 img{
+    width: 100%;
+    height: 100%;
+}
+#sec-2{
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+#sec-3{
+    grid-column-start:4;
+    grid-column-end: 5;
+}
+#sec-4{
+    grid-column-start: 5;
+    grid-column-end: 7;
+    margin-left: 80px;
+}
+
+.box-container svg .role{
+    color: white;
+}
+.hero-section-sub-heading{
+    font-size: 45px;
+    line-height: 45px;
+    /* color: rgb(108, 10, 106) ; */
+    color: rgb(244, 133, 241);;
+    font-weight: bolder;
+
+}
+.hero-section-sub-heading .role{
+    color: white;
+}
+
+.text.sec-text:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* border-left: 2px solid #4070F4; */
+    animation: animate 4s steps(12) infinite;
+}
+@keyframes animate{
+    40%, 60%{
+        left: calc(100% + 4px);
+    }
+    100%{
+        left: 0%;
+    }
+}
+.typewriter{
+    position: relative;
+}
+.typewriter::after{
+    content: '|';
+    position: absolute;
+    right: 0;
+    color: white;
+    width: 100%;
+    animation: typing 3s steps(14) alternate infinite,
+                line 1s infinite;
+}
+@keyframes typing{
+    to{
+        width: 0%;
+    }
+}
+@keyframes line {
+    50%{
+        color: transparent;
+    }
+}
+
